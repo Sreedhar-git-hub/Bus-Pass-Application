@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGSRTC Bus Pass Application</title>
+</head>
+<body>
+    <form method="get" action="./Target.html">
+    <center>
+        <img src="./title.png" width="500">
+        </center>
+        <fieldset>
+            <legend> <b>
+                Applicant Details</b>
+            </legend>
+            <label for="fname">Name*</label>
+            <input type="text" name="firstname" pattern="[a-zA-z-Z]+{2,20}" required>
+            <label for="Fmailydetails">Father's /Guardian's Name*</label>
+            <input type="text" name="Fmailydetails" pattern="[a-zA-Z]+{5,20}"> <br>
+            <label for="DOB"> DOB*</label>
+            <input type="date" name="DOB" id="DOB" placeholder="dd-mm-yyyy" required> 
+            <label for="Gender">Gender*</label>
+            <label for="male" >male</label>
+            <input type="radio" name="gender" value="male" required>
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female" required> 
+            <br>
+            <label for="number"> Aadhar Number*</label>
+            <input type="text" name="number" id="number" pattern="(?=.*[0-9]+){5,12}" required> <br>
+            <label for="Wnumber">Whatsapp Number</label>
+            <input type="text" id="Wnumber" name="Whatsapp" pattern="(?=.* \+91)(?=.*[6789]) (?=.*[0-9]+){9}" required> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <label for="photo">Profile Photo</label>
+            <input type="file" required>
+        </fieldset>
+
+        <fieldset>
+            <legend> <b>Residential Details </b></legend>
+             <label for="Address">Address* </label>
+            <textarea name="Address" id="Address" placeholder="Address"></textarea>
+            <label for="district">District</label>
+            <select name="District" id="district" required> 
+                <option value="select">Select</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Adhilabad">Adhilabad</option>
+                <option value="Machirail">Machirail</option>
+                <option value="Nirmal">Nirmal</option>
+                <option value="Nizambad">Nizambad</option>
+            </select>
+            <br><br>
+            <label for="Mandal">Mandal*</label>
+            <select name="Mandal" id="Mandal" required>
+                <option value="select">select</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+            <label for="Village">Village*</label>
+            <select name="Village" id="Village" required>
+                <option value="Select">Select</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+            <br><br>
+            <label for="Pincode">Pincode*</label>
+            <input type="text" name="Pincode" id="pincode" pattern="[0-9]+{6}" title="Please enter a Required Numbers" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <b>Pass Type Details</b>
+            </legend>
+            <label for="City">City*</label>
+            <select name="City" id="City">
+                <option value="Select">--select--</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select> <br>
+            <label for="PassType">Pass Type*</label>
+            <select name="PassType" id="PassType" required>
+                <option value="Select">--select--</option>
+                <option value="GREATER PASS">GREATER PASS</option>
+                <option value="GENERAL ORDENARY ROUTE PASS MTLY">GENERAL ORDENARY ROUTE PASS MTLY</option>
+                <option value="GENERAL METRO EXPRESS ROUTE PASS MTLY">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+                <option value="ORDUNARY PASS">ORDANARY PASS</option>
+                <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+                <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Mode of Payment & Pass Collection</b></legend>
+            <label for="Payment Mode">Payment Mode*</label>
+            <select name="Payment Mode" id="Payment Mode" required>
+                <option value="select">--select--</option>
+                <option value="Online Payment">Online payment</option>
+                <option value="Payment at Counter">Payment at Counter</option>
+            </select><br>
+            <label for="Pass Delivery Mode">
+             Pass Delivery Mode*   
+            </label>
+            <select name="Payment Delivery Mode" id="Payment Delivery Mode" required>
+                <option value="Select">--select--</option>
+                <option value="At home Delivery">At home Delivery</option>
+                <option value="At Counter">At Counter</option>
+            </select>
+            <br><br>
+            <label for="Collect">Center at which you want to Collect Pass*</label>
+            <select name="Collect" id="Collect"required>
+                <option value="select">---Select---</option>
+                <option value="RTC AFZALGUNJ -- HYD [ 05/02/2025]">RTC AFZALGUNJ -- HYD [ 05/02/2025]</option>
+                <option value="RTC AIRPORT -- HYD [ 04/02/2025 ]">RTC AIRPORT -- HYD [ 04/02/2025 ]</option>
+                <option value="RTC ARAMGHAR -- HYD [ 05/02/2025 ]">RTC ARAMGHAR -- HYD [ 05/02/2025 ]</option>
+                <option value="RTC BALA NAGAR -- HYD [ 05/02/2025 ]">RTC BALA NAGAR -- HYD [ 05/02/2025 ]</option>
+                <option value="RTC BORABANDA -- HYD [ 05/02/2025]">RTC BORABANDA -- HYD [ 05/02/2025]</option>
+                <option value="RTC CBS -- HYD [05/02/2025]">RTC CBS -- HYD [05/02/2025]</option>
+                <option value="RTC CHARMINAR -- HYD [ 04/02/2025 ]">RTC CHARMINAR -- HYD [ 04/02/2025 ]</option>
+                <option value="RTC DILSUKHNAGAR -- HYD [ 05/02/2025]">RTC DILSUKHNAGAR -- HYD [ 05/02/2025]</option>
+                <option value="RTC ECIL -- HYD [05/02/2025 ]">RTC ECIL -- HYD [05/02/2025 ]</option>
+                <option value="RTC FAROOQNAGAR -- HYD [ 05/02/2025]">RTC FAROOQNAGAR -- HYD [ 05/02/2025]</option>
+                <option value="RTC GHATKESAR -- HYD [ 05/02/2025]">RTC GHATKESAR -- HYD [ 05/02/2025]</option>
+                <option value="RTC HAYATHNAGAR -- HYD [ 05/02/2025]">RTC HAYATHNAGAR -- HYD [ 05/02/2025]</option>
+            </select>
+
+            
+        </fieldset>
+
+        <center>
+            <img src="./captcha.png" alt="captcha" width="100" title="captcha"><br>
+            <input type="text" name="captcha" id="captcha" pattern="4NUawc" title="Enter the Above Given CAPTCHA" required><br>
+            <input type="submit" name="submit" id="submit" required>
+        </center>
+
+
+    </form>
+</body>
+</html>
